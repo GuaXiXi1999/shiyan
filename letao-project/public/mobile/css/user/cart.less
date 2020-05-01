@@ -1,0 +1,213 @@
+@import "var";
+@import "mixin";
+@import "dioayong";
+
+.content{
+  padding-bottom: 160rem/@baseFontSize;
+}
+
+.spLi{
+  height: 180rem/@baseFontSize;
+  width: 100%;
+
+  .mui-slider-handle{
+    //width: 100%!important;
+    height: 180rem/@baseFontSize;
+  }
+  //.mui-table-cell{
+  //  width: 100%!important;
+  //
+  //  //.mui-media-body{
+  //  //
+  //  //}
+  //
+  //}
+}
+
+.mui-slider-handle{
+  position: relative;
+  padding: 0!important;
+  img{
+    width: 100rem/@baseFontSize!important;
+    height: 100rem/@baseFontSize!important;
+    margin-top: 10rem/@baseFontSize!important;
+    margin-left: 30rem/@baseFontSize;
+  }
+  .fuxuan{
+    height: 30rem/@baseFontSize;
+    width: 30rem/@baseFontSize;
+    position: absolute;
+    bottom: 15rem/@baseFontSize;
+    left: 65rem/@baseFontSize;
+  }
+  .mui-media-body{
+    position: absolute;
+    top: 10rem/@baseFontSize;
+    width: 75%;
+    margin-left: 20%;
+    .spName{
+      width: 100%;
+      height: 80rem/@baseFontSize;
+      white-space: pre-wrap!important;
+      font-size: 22rem/@baseFontSize;
+      line-height: 1.5;
+    }
+    .spPN{
+      height: 30rem/@baseFontSize;
+      .Price{
+        font-size: 25rem/@baseFontSize;
+        color: rgb(255,51,0);
+
+      }
+      .oldPrice{
+        font-size: 20rem/@baseFontSize;
+        text-decoration: line-through;
+
+      }
+      .spNum{
+        float: right;
+        font-size: 20rem/@baseFontSize;
+
+      }
+
+    }
+    .size{
+      //float: right;
+      font-size: 20rem/@baseFontSize;
+    }
+
+  }
+}
+
+
+.goods_size{
+  width: 100%;
+  //height: 100rem/@baseFontSize;
+  border-top: 1px solid #bfbfbf;
+  //background-color: #d6d6d6;
+  font-size: 18rem/@baseFontSize;
+  line-height: 80rem/@baseFontSize;
+
+  ul{
+    margin-top: 20rem/@baseFontSize;
+    display: inline-block;
+    height: auto;
+
+    span{
+      float: left;
+    }
+    li{
+      float: left;
+      list-style: none;
+      width: 40rem/@baseFontSize;
+      height: 40rem/@baseFontSize;
+      border: 1px solid #999999;
+      text-align: center;
+      line-height: 40rem/@baseFontSize;
+      margin-left: 10rem/@baseFontSize;
+      margin-top: 10rem/@baseFontSize;
+      &.now{
+        background-color: orange;
+        color: white;
+        border: none;
+      }
+    };
+    &::after{
+      content: "";
+      display: block;
+      height: 0;
+      line-height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+  }
+}
+.goods_num{
+  width: 100%;
+  height: 80rem/@baseFontSize;
+  border-top: 1px solid #bfbfbf;
+  //background-color: #d6d6d6;
+  font-size: 18rem/@baseFontSize;
+  line-height: 80rem/@baseFontSize;
+  //padding: 20rem/@baseFontSize 10rem/@baseFontSize 20rem/@baseFontSize;
+  span{
+    float: left;
+  }
+  .jian{
+    float: left;
+
+    padding: 0;
+    width: 40rem/@baseFontSize;
+    height: 40rem/@baseFontSize;
+    text-align: center;
+    line-height: 40rem/@baseFontSize;
+    margin-top: 25rem/@baseFontSize;
+    font-size: 28rem/@baseFontSize;
+
+  }
+  .num{
+    float: left;
+    padding: 0;
+    width: 40rem/@baseFontSize;
+    height: 40rem/@baseFontSize;
+    text-align: center;
+    line-height: 40rem/@baseFontSize;
+    font-size: 24rem/@baseFontSize;
+    margin-top: 25rem/@baseFontSize;
+
+  }
+  .jia{
+    float: left;
+    padding: 0;
+    width: 40rem/@baseFontSize;
+    height: 40rem/@baseFontSize;
+    text-align: center;
+    line-height: 40rem/@baseFontSize;
+    margin-top: 25rem/@baseFontSize;
+    font-size: 28rem/@baseFontSize;
+
+
+  }
+}
+.goods_num_box{
+  float: left;
+}
+
+
+.sum{
+  width: 100%;
+  height: 60rem/@baseFontSize;
+  position: fixed;
+  left: 0;
+  bottom: 100rem/@baseFontSize;
+  background-color: #FFFFFF;
+  z-index: 1000;
+  border-top: 1px solid #eeeeee;
+  .txt{
+    color: rgb(255,51,0);
+    line-height: 60rem/@baseFontSize;
+    font-size: 25rem/@baseFontSize;
+    font-weight: 600;
+  }
+  .sumText{
+    color: rgb(255,51,0);
+    line-height: 60rem/@baseFontSize;
+    font-size: 25rem/@baseFontSize;
+
+  }
+  .scdd{
+    position: absolute;
+    height: 60rem/@baseFontSize;
+    width: 200rem/@baseFontSize;
+    background-color: rgb(255,51,0);
+    color: white;
+    line-height: 60rem/@baseFontSize;
+    text-align: center;
+    font-size: 26rem/@baseFontSize;
+    font-weight: 600;
+    right: 0;
+    top:0;
+
+  }
+
+}

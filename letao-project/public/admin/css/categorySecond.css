@@ -1,0 +1,60 @@
+.addCategory{
+    margin-bottom: 20px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #aaa;
+    color: rgb(102, 102, 102);
+    border-radius: 10px;
+}
+
+.xialaTxt>a{
+    color: black;
+}
+.inputBox{
+    /* position: relative; */
+    margin-top: 20px;
+}
+.inputBox::after{
+    content: '';
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+.cInput{
+    display: block;
+}
+.mBody::after{
+    content: '';
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+.uploadImg{
+    opacity: 0;
+    position: absolute;
+    width: 100px;
+    height: 40px;
+}
+.uploadBtn{
+    display: block;
+    color: black!important;
+    line-height: 40px;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.disImg{
+    display: block;
+    margin-top: 20px;
+}
+.myRow{
+    padding-right: 0;
+}

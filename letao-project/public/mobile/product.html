@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!--ios设置顶部通知栏的样式 黑色-->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!--遇到数字不转化为电话号码的格式-->
+    <meta content="telephone=no" name="format-detection">
+    <!--项目描述-->
+    <meta name="description" content="乐淘是中国最大的正品运动鞋、皮鞋网上专卖。乐淘网经营的品牌包括耐克、阿迪达斯、李宁、匡威等国内外知名品牌的篮球鞋,板鞋,休闲鞋,跑步鞋,帆布...">
+    <meta name="Keywords" content="乐淘 乐淘鞋城 买鞋子 上乐淘 运动鞋 篮球鞋 帆布鞋 跑步鞋 男鞋 女鞋 足球鞋 休闲鞋 凉鞋 户外鞋 布洛克 高跟鞋 单鞋 豆豆鞋 乐福鞋 牛津鞋 凉拖 皮鞋 短靴 长靴 登山鞋 徒步鞋 硫化鞋 训练鞋 溯溪鞋 越野鞋 板鞋 足球鞋 网球鞋 赛车鞋 雪地靴 马丁靴 商务 英伦">
+    <link rel="stylesheet" href="res/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="res/mui/css/mui.css">
+    <link rel="stylesheet" type="text/less" href="./css/comment.less">
+    <link rel="stylesheet" type="text/less" href="./css/product.less">
+    <title>搜索列表</title>
+</head>
+<body>
+<div class="lt_wrap">
+    <!--头部-->
+    <div class="le_header">
+
+        <a href="search.html" class="left">
+            <span class="fa fa-arrow-left"></span>
+        </a>
+        <h3>商品详情</h3>
+        <!--<a href="" class="right">-->
+            <!--<span class="fa fa-search"></span>-->
+        <!--</a>-->
+    </div>
+
+    <!--<div id="refreshContainer"  class="  mui-scroll-wrapper">-->
+    <!--<div class=" lt_index_content mui-scroll">-->
+    <div class="content content_pro">
+        <div class="content_son">
+            <div id="refreshContainer" class=" in mui-content mui-scroll-wrapper">
+                <div style="background-color: white" class="mui-scroll myMuban">
+
+                    <!--轮播图-->
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--脚 -->
+<div class="prodyct_foot">
+    <!--购物车图标-->
+    <a href="" class="cart_icon">
+        <span class="mui-icon mui-icon-qq"></span>
+    </a>
+    <!--//加入购物车按钮-->
+    <a href="javascript:;" class="addCart">
+        加入购物车
+    </a>
+    <!--立即购买按钮-->
+    <a href="" class="ljgm">
+        立即购买
+    </a>
+</div>
+
+
+
+
+
+
+
+</div>
+
+<script type="text/html" id="banner">
+
+    <div class="mui-slider">
+        <div class="mui-slider-group mui-slider-loop">
+            <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="{{ spData.pic[spData.pic.length-1].picAddr }}" /></a></div>
+            {{ each spData.pic }}
+            <div class="mui-slider-item "><a href="#"><img src="{{ $value.picAddr }}" /></a></div>
+
+            {{ /each }}
+            <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="{{ spData.pic[0].picAddr }}" /></a></div>
+
+        </div>
+
+        <div class="mui-slider-indicator">
+
+            {{ each spData.pic }}
+            <div class="mui-indicator {{ $index == 0 ? 'mui-active' : '' }}"></div>
+            {{ /each }}
+
+
+
+        </div>
+    </div>
+
+
+    <div class="goods_text">
+        <p>{{ spData.proName }}</p>
+    </div>
+
+    <div class="goods_price">
+        <span>价格：</span>
+        <span>￥{{ spData.price }}</span>
+        <span>￥{{ spData.oldPrice }}</span>
+    </div>
+
+
+    <div class="goods_size">
+        <span>尺码：</span>
+        <ul>
+            {{ each sizeArr }}
+            <li class="sizeBtn">{{ $value }}</li>
+            {{ /each }}
+
+        </ul>
+    </div>
+
+
+    <div class="goods_num">
+        <span>数量：</span>
+        <button class="jian">-</button>
+        <input class="num" type="text" value="1">
+        <button class="jia">+</button>
+        <div class="goods_num_box">
+            <span>剩余：</span><span class="shuliang">{{ spData.num }}</span><span>件</span>
+
+        </div>
+    </div>
+
+
+</script>
+
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+<script src="res/mui/js/mui.js"></script>
+<script src="res/zepto/zepto.min.js"></script>
+<script src="res/zepto/selector.js"></script>
+<script src="js/template-web.js"></script>
+<script src="js/common.js"></script>
+<script src="js/product.js"></script>
+
+
+</body>
+</html>

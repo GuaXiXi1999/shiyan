@@ -1,0 +1,84 @@
+@import "var";
+@import "mixin";
+@import "dioayong";
+.lg_search_top{
+  width: 100%;
+  padding: 0 2%;
+  margin-top: 10rem/@baseFontSize;
+  height: 70rem/@baseFontSize;
+
+  input{
+    width: 80%;
+    height: 50rem/@baseFontSize;
+    font-size: 18rem/@baseFontSize;
+    float: left;
+    border: 1px solid @ltColor;
+  }
+  a{
+    width: 20%;
+    text-align: center;
+    height: 50rem/@baseFontSize;
+    float: left;
+    line-height: 50rem/@baseFontSize;
+    background-color: @ltColor;
+    color: white;
+    font-size: 18rem/@baseFontSize;
+  }
+  &::after{
+    content: "";
+    display: block;
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+  }
+}
+.lg_search_deleteAll_box{
+  width: 100%;
+  height: 80rem/@baseFontSize;
+  padding: 5rem/@baseFontSize 2%;
+  font-size: 18rem/@baseFontSize;
+  position: relative;
+  span{
+    &.left{
+
+      position: absolute;
+      left: 16rem/@baseFontSize;
+    }
+    &.right{
+      position: absolute;
+      right: 16rem/@baseFontSize;
+    }
+  }
+
+  &::after{
+    content: "";
+    display: block;
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+  }
+
+}
+
+.lg_search_jilu_box{
+  padding: 0 2%;
+  li{
+    height: 50rem/@baseFontSize;
+    line-height: 50rem/@baseFontSize;
+    border: 1px solid #afafaf;
+    padding: 0 10rem/@baseFontSize;
+    list-style: none;
+    span{
+      float: right;
+      margin-top: 10rem/@baseFontSize;
+      &.left{
+        float: left;
+        margin-top: 0;
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,10 @@
+.barChart{
+    width: 45%;
+    height: 400px;
+    float: left;
+}
+.pieChart{
+    width: 45%;
+    height: 400px;
+    float: right;
+}

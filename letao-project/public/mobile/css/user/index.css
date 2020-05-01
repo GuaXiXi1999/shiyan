@@ -1,0 +1,97 @@
+/* 定义变量 */
+/* 设计稿的尺寸 */
+/* 预设的基准值 */
+@media (min-width: 320px) {
+  html {
+    font-size: 42.66666667px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media (min-width: 380px) {
+  html {
+    font-size: 50.66666667px;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+@media (min-width: 424px) {
+  html {
+    font-size: 56.53333333px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 64px;
+  }
+}
+@media (min-width: 540px) {
+  html {
+    font-size: 72px;
+  }
+}
+@media (min-width: 600px) {
+  html {
+    font-size: 80px;
+  }
+}
+@media (min-width: 640px) {
+  html {
+    font-size: 85.33333333px;
+  }
+}
+@media (min-width: 720px) {
+  html {
+    font-size: 96px;
+  }
+}
+@media (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+.mui-navigate-right {
+  padding: 0.1rem !important;
+}
+.userInfo {
+  height: 1rem !important;
+}
+.userInfo > a img {
+  height: 0.8rem !important;
+}
+.userInfo > a .mui-media-body {
+  height: 0.8rem !important;
+}
+.userInfo > a .mui-media-body span {
+  font-size: 0.25rem;
+  color: black;
+  line-height: 1;
+}
+.userInfo > a .mui-media-body .mui-ellipsis {
+  line-height: 0;
+  margin-top: 0.1rem;
+}
+.userInfo > a .mui-media-body .mui-ellipsis span {
+  font-size: 0.2rem;
+  color: #bbbbbb;
+}
+.sli {
+  height: 0.6rem;
+  font-size: 0.25rem;
+  padding: 0.2rem;
+}
+.outBtn {
+  margin-top: 0.2rem;
+}
+/*# sourceMappingURL=index.css.map */

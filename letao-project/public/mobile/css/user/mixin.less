@@ -1,0 +1,10 @@
+//定义函数
+
+.mixin(@len) when(@len>0){
+  @media (min-width: extract(@dimensions, @len)){
+    html{
+      font-size: extract(@dimensions, @len) / @psdWidth * @baseFontSize;
+    }
+  }
+  .mixin(@len - 1)
+}

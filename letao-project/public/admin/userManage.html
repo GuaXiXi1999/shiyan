@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/userManage.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- 左侧菜单 -->
+    <div class="left_menu">
+        <!-- logo -->
+        <div class="logo">
+            <a href="index.html">ITCAST</a>
+        </div>
+        <!-- 用户区域 -->
+        <div class="user_info">
+            <img src="images/default.png" alt="">
+            <span>管理员</span>
+        </div>
+        <!-- 菜单选项 -->
+        <ul class="manage_ul">
+            <li>
+                <a class="" href="">
+                    <span class="glyphicon glyphicon-user"></span>
+                    用户管理
+                </a>
+            </li>
+            <li>
+                <a data-toggle="collapse" data-parent="#accordion" 
+                href="#collapseTwo" class="txtActive">
+                <span class="glyphicon glyphicon-th-list "></span>
+                分类管理
+            </a>
+                <!-- 隐藏二级菜单 -->
+                <div id="collapseTwo" class="sort_hide panel-collapse collapse">
+                    <a href="" class="txtActive">一级分类</a>
+                    <a href="">二级分类</a>
+                </div>
+                <!-- 商品管理 -->
+                <li>
+                    <a href="">
+                        <span class="glyphicon glyphicon-tags"></span>
+                        商品管理
+                    </a>
+                </li>
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- 右侧内容 -->
+
+    <div class="right_content">
+        <nav class="right_content_top">
+            <a href="" class="right_content_top_sort">
+                <span class="glyphicon glyphicon-align-justify"></span>
+            </a>
+            <a href="javascript:;" class="right_content_top_back">
+                <span class="glyphicon glyphicon-log-out outBtn" ></span>
+            </a>
+        </nav>
+        <ol class="breadcrumb lujing">
+            <li><a href="#">管理系统</a></li>
+            <li><a href="#">分类管理</a></li>
+            
+            <li class="active">二级分类</li>
+        </ol>
+
+        <!-- 内容： 一级分类表格 -->
+        <div class="myContentBox ">
+
+            <!-- <button class="addCategory" data-toggle="modal" data-target="#addModal">添加分类</button> -->
+
+            <table class="table table-bordered table-hover">
+                <thead >
+                    <tr>
+                        <td width='10%'>序号</td>
+                        <td width='30%'>用户名</td>
+                        <td width='30%'>手机号</td>
+                        <td width='20%'>状态</td>
+                        <td width='10%'>操作</td>
+
+                    </tr>
+                </thead>
+                <tbody class="listTbody">
+                    <!-- TODO -->
+                </tbody>
+
+            </table>
+            
+            <!-- 分页 -->
+            <div class="pageBox">
+                <ul class="myPage">
+
+                </ul>
+            </div>
+
+
+
+
+            
+        </div>
+        
+
+
+
+
+<!-- -----------------模板---------------------------------------------- -->
+<script type="text/html" id="list">
+{{ each rows }}
+<tr data-userId = "{{ $value.id }}">
+    <td width='10%'>{{ (size*(page-1)+ $index)+1 }}</td>
+    <td width='30%'>{{ $value.username }}</td>
+    <td width='30%'>{{ $value.mobile }}</td>
+    <td width='20%'>{{ $value.isDelete == 1 ? '开启':'已禁用' }}</td>
+    <td width='10%'><button class="{{ $value.isDelete == 1 ? 'myBtn btn btn-danger':'myBtn btn btn-success' }}">{{ $value.isDelete == 1 ? '禁用':'启用' }}</button></td>
+
+</tr>
+
+{{ /each }}
+
+
+</script>
+
+    
+
+<script src="assets/jquery/jquery.js"></script>
+<script src="assets/bootstrap/js/bootstrap.js"></script>
+<script src="assets/echarts/echarts.min.js"></script>
+<script src="assets/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+
+<script src="assets/nprogress/nprogress.js"></script>
+<script src="assets/artTemplate/template-web.js"></script>
+<!-- //基于bpptstrap的 分页插件 -->
+<script src="assets/bootstrap-paginator/bootstrap-paginator.js"></script>
+
+<!-- 上传图片 相关的三个包 都基于jquery -->
+<script src="assets/jquery-fileupload/jquery.ui.widget.js"></script>
+<script src="assets/jquery-fileupload/jquery.iframe-transport.js"></script>
+<script src="assets/jquery-fileupload/jquery.fileupload.js"></script>
+
+<script src="js/common.js"></script>
+<script src="js/userManage.js"></script>
+</body>
+</html>

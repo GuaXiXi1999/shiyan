@@ -1,0 +1,169 @@
+/* 定义变量 */
+/* 设计稿的尺寸 */
+/* 预设的基准值 */
+@media (min-width: 320px) {
+  html {
+    font-size: 42.66666667px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media (min-width: 380px) {
+  html {
+    font-size: 50.66666667px;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+@media (min-width: 424px) {
+  html {
+    font-size: 56.53333333px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 64px;
+  }
+}
+@media (min-width: 540px) {
+  html {
+    font-size: 72px;
+  }
+}
+@media (min-width: 600px) {
+  html {
+    font-size: 80px;
+  }
+}
+@media (min-width: 640px) {
+  html {
+    font-size: 85.33333333px;
+  }
+}
+@media (min-width: 720px) {
+  html {
+    font-size: 96px;
+  }
+}
+@media (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+body {
+  background-color: white;
+}
+.lg_search_top {
+  width: 100%;
+  padding: 0 2%;
+  margin-top: 0.1rem;
+  height: 0.7rem;
+}
+.lg_search_top input {
+  width: 80%;
+  height: 0.5rem;
+  font-size: 0.18rem;
+  float: left;
+  border: 1px solid #006698;
+}
+.lg_search_top button {
+  width: 20%;
+  height: 0.5rem;
+  float: left;
+  background-color: #006698;
+  color: white;
+  font-size: 0.18rem;
+}
+.lg_search_top::after {
+  content: "";
+  display: block;
+  line-height: 0;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.screen {
+  width: 100%;
+  height: 0.5rem;
+  background-color: #efefef;
+}
+.screen li {
+  list-style: none;
+  float: left;
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  line-height: 0.5rem;
+}
+.screen li.now {
+  color: #ffb513;
+}
+.lg_index_goodList {
+  width: 100%;
+  height: auto;
+}
+.lg_index_goodList .goods_box {
+  display: inline-block;
+}
+.lg_index_goodList .goods_box:nth-child(odd) {
+  float: left;
+}
+.lg_index_goodList .goods_box:nth-child(even) {
+  float: right;
+}
+.lg_index_goodList .goods_box {
+  width: 48%;
+  box-shadow: 0px 0px 12px 0px #aeaeae;
+  text-align: center;
+  padding-bottom: 0.2rem;
+  margin-top: 0.1rem;
+  background-color: white;
+}
+.lg_index_goodList .goods_box img {
+  width: 100%;
+}
+.lg_index_goodList .goods_box .goods_box_text {
+  font-size: 0.2rem;
+  width: 90%;
+  height: 1rem;
+  margin: 0 auto;
+}
+.lg_index_goodList .goods_box .goods_box_price {
+  font-size: 0.22rem;
+  margin-top: 0.1rem;
+}
+.lg_index_goodList .goods_box .goods_box_price span:first-child {
+  color: red;
+}
+.lg_index_goodList .goods_box .goods_box_price span:last-child {
+  color: #999990;
+  text-decoration: line-through;
+}
+.lg_index_goodList .goods_box button {
+  margin-top: 0.1rem;
+  background-color: #006699;
+  color: white;
+  border: none;
+  width: 70%;
+  height: 0.7rem;
+}
+.lg_index_goodList::after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/*# sourceMappingURL=searchList.css.map */

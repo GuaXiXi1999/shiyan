@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- 左侧菜单 -->
+    <div class="left_menu">
+        <!-- logo -->
+        <div class="logo">
+            <a href="index.html">ITCAST</a>
+        </div>
+        <!-- 用户区域 -->
+        <div class="user_info">
+            <img src="images/default.png" alt="">
+            <span>管理员</span>
+        </div>
+        <!-- 菜单选项 -->
+        <ul class="manage_ul">
+            <li>
+                <a class="" href="">
+                    <span class="glyphicon glyphicon-user"></span>
+                    用户管理
+                </a>
+            </li>
+            <li>
+                <a data-toggle="collapse" data-parent="#accordion" 
+                href="#collapseTwo">
+                <span class="glyphicon glyphicon-th-list"></span>
+                分类管理
+            </a>
+                <!-- 隐藏二级菜单 -->
+                <div id="collapseTwo" class="sort_hide panel-collapse collapse">
+                    <a href="categoryFirst.html">一级分类</a>
+                    <a href="">二级分类</a>
+                </div>
+                <!-- 商品管理 -->
+                <li>
+                    <a href="">
+                        <span class="glyphicon glyphicon-tags"></span>
+                        商品管理
+                    </a>
+                </li>
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- 右侧内容 -->
+
+    <div class="right_content">
+        <nav class="right_content_top">
+            <a href="" class="right_content_top_sort">
+                <span class="glyphicon glyphicon-align-justify"></span>
+            </a>
+            <a href="javascript:;" class="right_content_top_back">
+                <span class="glyphicon glyphicon-log-out outBtn"></span>
+            </a>
+        </nav>
+        <ol class="breadcrumb lujing">
+            <li><a href="#">管理系统</a></li>
+            
+            <li class="active">首页</li>
+        </ol>
+
+        <!-- 内容： 图表 -->
+        <div class="myContentBox">
+            <!-- 柱状图 -->
+            <div id="barChart" class=" barChart">
+                        
+            </div>
+
+            <!-- 饼状图 -->
+            <div id="pieChart" class=" pieChart">
+
+            </div>
+        </div>
+        
+
+
+    </div>
+
+
+
+    
+
+<script src="assets/jquery/jquery.js"></script>
+<script src="assets/bootstrap/js/bootstrap.js"></script>
+<script src="assets/echarts/echarts.min.js"></script>
+<script src="assets/nprogress/nprogress.js"></script>
+
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

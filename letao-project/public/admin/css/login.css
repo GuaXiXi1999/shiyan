@@ -1,0 +1,68 @@
+body{
+    background-color: #222d32;
+}
+.bigBox{
+    background-color: white;
+    margin-top: 200px;
+    border-radius: 10px;
+    padding: 0;
+    overflow: hidden;
+}
+.formBox{
+    padding: 20px ;
+}
+.formBox>form{
+    padding: 0 20px;
+}
+
+.formBox::after{
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.titleBox{
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(51,122,183);
+    border-top: 1px solid rgb(51,122,183);
+}
+h4{
+    line-height: 60px;
+    margin: 0;
+    color: white;
+}
+.formBox{
+    padding: 20px 0 20px;
+}
+
+.inputBox{
+    position: relative;
+}
+.inputBox::after{
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.btn-chongzhi{
+    margin-right: 50px;
+    background-color: white;
+    border: 1px solid #999999;
+    color: black;
+}
+
+.btn-chongzhi:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.myRow{
+    padding-right: 0;
+}

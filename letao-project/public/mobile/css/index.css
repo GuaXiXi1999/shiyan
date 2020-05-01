@@ -1,0 +1,173 @@
+/* 定义变量 */
+/* 设计稿的尺寸 */
+/* 预设的基准值 */
+@media (min-width: 320px) {
+  html {
+    font-size: 42.66666667px;
+  }
+}
+@media (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media (min-width: 380px) {
+  html {
+    font-size: 50.66666667px;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+@media (min-width: 424px) {
+  html {
+    font-size: 56.53333333px;
+  }
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 64px;
+  }
+}
+@media (min-width: 540px) {
+  html {
+    font-size: 72px;
+  }
+}
+@media (min-width: 600px) {
+  html {
+    font-size: 80px;
+  }
+}
+@media (min-width: 640px) {
+  html {
+    font-size: 85.33333333px;
+  }
+}
+@media (min-width: 720px) {
+  html {
+    font-size: 96px;
+  }
+}
+@media (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+.index_wrap {
+  width: 100%;
+  padding: 0 0.14rem;
+}
+.nav_box {
+  margin-top: 0.2rem;
+}
+.nav_box img {
+  width: 100%;
+  height: 100%;
+}
+.lg_active_1 {
+  margin-top: 0.2rem;
+  width: 100%;
+  height: 4rem;
+}
+.lg_active_1 img:nth-child(1) {
+  float: left;
+  width: 35%;
+  height: 50%;
+}
+.lg_active_1 img:nth-child(2) {
+  float: left;
+  width: 35%;
+  height: 50%;
+}
+.lg_active_1 img:nth-child(3) {
+  float: right;
+  width: 30%;
+  height: 100%;
+}
+.lg_active_1 img:nth-child(4) {
+  float: left;
+  width: 35%;
+  height: 50%;
+}
+.lg_active_1 img:nth-child(5) {
+  float: left;
+  width: 35%;
+  height: 50%;
+}
+.title_1 {
+  margin-top: 0.2rem;
+  width: 100%;
+}
+.title_1 img {
+  width: 100%;
+}
+.lg_index_brand img {
+  float: left;
+  width: 25%;
+}
+.lg_index_brand::after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.lg_index_goodList {
+  width: 100%;
+}
+.lg_index_goodList .goods_box {
+  width: 49%;
+  box-shadow: 0px 0px 12px 0px #aeaeae;
+  text-align: center;
+  padding-bottom: 0.2rem;
+  margin-top: 0.1rem;
+}
+.lg_index_goodList .goods_box img {
+  width: 100%;
+}
+.lg_index_goodList .goods_box .goods_box_text {
+  width: 90%;
+  margin: 0 auto;
+}
+.lg_index_goodList .goods_box .goods_box_price {
+  margin-top: 0.1rem;
+}
+.lg_index_goodList .goods_box .goods_box_price span:first-child {
+  color: red;
+}
+.lg_index_goodList .goods_box .goods_box_price span:last-child {
+  color: #999990;
+  text-decoration: line-through;
+}
+.lg_index_goodList .goods_box button {
+  margin-top: 0.1rem;
+  background-color: #006699;
+  color: white;
+  border: none;
+  width: 70%;
+  height: 0.7rem;
+}
+.lg_index_goodList .goods_box:nth-child(odd) {
+  float: left;
+}
+.lg_index_goodList .goods_box:nth-child(even) {
+  float: right;
+}
+.lg_index_goodList::after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/*# sourceMappingURL=index.css.map */

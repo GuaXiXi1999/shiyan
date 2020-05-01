@@ -1,0 +1,35 @@
+table td{
+    text-align: center;
+}
+.addCategory{
+    margin-bottom: 20px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #aaa;
+    color: rgb(102, 102, 102);
+    border-radius: 10px;
+}
+#add{
+    display: block;
+    position: relative;
+}
+.mBody::after{
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+}
+.cInput{
+    display: block;
+    /* margin: 10px 0; */
+}
+.myRow{
+    padding-right: 0;
+}
+.btn_box{
+    padding-top: 20px;
+}

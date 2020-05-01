@@ -1,0 +1,113 @@
+
+@import "var";
+@import "mixin";
+@import "dioayong";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.left{
+}
+body{
+  touch-action: pan-y;
+  background-color: white;
+}
+//版心
+.lt_wrap{
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  max-width: 750px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  //padding: 70rem/@baseFontSize 0 100rem/@baseFontSize;
+
+}
+.in{
+  background-color: white;
+}
+//公共头部
+.le_header{
+  height: 70rem/@baseFontSize;
+  width: 100%;
+  background-color: @ltColor;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+
+  h3{
+    line-height: 70rem/@baseFontSize;
+    color: white;
+    text-align: center;
+    font-weight: 300rem/@baseFontSize!important;
+    margin: 0;
+    font-size: 30rem/@baseFontSize;
+
+  }
+
+  a{
+    width: 46rem/@baseFontSize;
+    height: 46rem/@baseFontSize;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    span{
+     line-height: 70rem/@baseFontSize;
+      color: white;
+      font-size: 25rem/@baseFontSize;
+
+
+    }
+    &.left{
+      left: 0;
+    }
+    &.right{
+      right: 0;
+    }
+
+  }
+}
+//身体
+//.lt_index_content{
+//  width: 100%;
+//  height: auto;
+//  padding: 70rem/@baseFontSize 0 100rem/@baseFontSize;
+//
+//}
+.content{
+  width: 100%;
+  height: 100%;
+  padding: 70rem/@baseFontSize 0 100rem/@baseFontSize;
+  background-color: white;
+  .content_son{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+}
+
+.mui-pull-top-pocket.mui-block.mui-visibility {
+  padding-top: 70rem/@baseFontSize;
+}
+//公共的脚
+.le_foot{
+  height: 100rem/@baseFontSize;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  .lg_tab{
+    height: 100rem/@baseFontSize;
+    background-color: @ltColor;
+    a{
+      color: white;
+    }
+
+  }
+}

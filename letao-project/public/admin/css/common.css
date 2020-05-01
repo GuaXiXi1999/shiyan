@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: white;
+
+}
+/* 清除浮动类  */
+/* .cFix::after{
+
+} */
+
+.left_menu{
+    width: 180px;
+    height: 100%;
+    background-color: #222d32;
+    position: absolute;
+}
+.logo{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #367fa9;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+}
+.user_info{
+    padding: 30px 20px;
+
+}
+.user_info>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+
+}
+.user_info>span{
+    color: white;
+    line-height: 50px;
+    
+}
+.manage_ul{
+    width: 100%;
+}
+.manage_ul>li>a{
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: #aaa;
+}
+.manage_ul>li>a:hover{
+    color: white;
+}
+
+.sort_hide{
+    /* display: none; */
+    padding-left: 70px;
+
+}
+.sort_hide>a{
+    display: block;
+    line-height: 30px;
+    color: #aaa;
+}
+.sort_hide>a:hover{
+    color: white;
+
+}
+
+/* 右侧 */
+.right_content{
+    padding-left: 180px;
+    width: 100%;
+}
+.right_content_top{
+    height: 50px;
+    background-color: #3c8dbc;
+
+}
+.right_content_top>a{
+    margin-top: 12px;
+    font-size: 20px;
+}
+.right_content_top_sort{
+    float: left;
+    margin-left: 14px;
+
+}
+.right_content_top_back{
+    float: right;
+    margin-right: 14px;
+
+}
+.lujing{
+    margin: 20px;
+}
+.lujing a{
+    color: rgb( 60,141,188);
+}
+.myContentBox{
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+}
+.myContentBox::after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+.txtActive{
+    color: white!important;
+}

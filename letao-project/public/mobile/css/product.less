@@ -1,0 +1,190 @@
+@import "var";
+@import "mixin";
+@import "dioayong";
+.content_pro{
+  //padding-bottom: 0;
+}
+
+.goods_text{
+  width: 100%;
+  height: 100rem/@baseFontSize;
+  padding-right: 100rem/@baseFontSize;
+  //background-color: #d6d6d6;
+  p{
+    font-size: 26rem/@baseFontSize;
+    line-height: 1.5;
+
+  }
+}
+.goods_price{
+  width: 100%;
+  height: 100rem/@baseFontSize;
+  border-top: 1px solid #bfbfbf;
+  //background-color: #d6d6d6;
+  font-size: 18rem/@baseFontSize;
+  line-height: 80rem/@baseFontSize;
+  span{
+    &:nth-child(1){
+
+    }
+    &:nth-child(2){
+      font-size: 30rem/@baseFontSize;
+      font-weight: 700;
+      color: rgb(235,90,68);
+    }
+    &:nth-child(3){
+      text-decoration: line-through;
+      font-size: 17rem/@baseFontSize;
+      color: #999999;
+    }
+
+  }
+
+}
+
+.goods_size{
+  width: 100%;
+  // height: 100rem/@baseFontSize;
+  border-top: 1px solid #bfbfbf;
+  font-size: 18rem/@baseFontSize;
+  padding: 4rem/@baseFontSize 14rem/@baseFontSize 14rem/@baseFontSize;
+  // display: table-cell;
+  position: relative;
+
+  span{
+    position: absolute;
+    top: 15rem/@baseFontSize;
+   
+  }
+    ul{
+    width: 85%;
+    float: right;
+    // margin-top: 20rem/@baseFontSize;
+    display: inline-block;
+    li{
+      float: left;
+      list-style: none;
+      width: 40rem/@baseFontSize;
+      height: 40rem/@baseFontSize;
+      border: 1px solid #999999;
+      text-align: center;
+      line-height: 40rem/@baseFontSize;
+      margin-left: 10rem/@baseFontSize;
+      margin-top: 10rem/@baseFontSize;
+      &.now{
+        background-color: orange;
+        color: white;
+        border: none;
+      }
+    };
+  }
+
+  &:after{
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden
+  }
+}
+.goods_num{
+  width: 100%;
+  height: 80rem/@baseFontSize;
+  border-top: 1px solid #bfbfbf;
+  //background-color: #d6d6d6;
+  font-size: 18rem/@baseFontSize;
+  line-height: 80rem/@baseFontSize;
+  //padding: 20rem/@baseFontSize 10rem/@baseFontSize 20rem/@baseFontSize;
+  span{
+    float: left;
+  }
+  .jian{
+    float: left;
+
+    padding: 0;
+    width: 40rem/@baseFontSize;
+    height: 40rem/@baseFontSize;
+    text-align: center;
+    line-height: 40rem/@baseFontSize;
+    margin-top: 25rem/@baseFontSize;
+    font-size: 28rem/@baseFontSize;
+
+  }
+  .num{
+    float: left;
+    padding: 0;
+    width: 40rem/@baseFontSize;
+    height: 40rem/@baseFontSize;
+    text-align: center;
+    line-height: 40rem/@baseFontSize;
+    font-size: 24rem/@baseFontSize;
+    margin-top: 25rem/@baseFontSize;
+
+  }
+  .jia{
+    float: left;
+    padding: 0;
+    width: 40rem/@baseFontSize;
+    height: 40rem/@baseFontSize;
+    text-align: center;
+    line-height: 40rem/@baseFontSize;
+    margin-top: 25rem/@baseFontSize;
+    font-size: 28rem/@baseFontSize;
+
+
+  }
+}
+.goods_num_box{
+  float: left;
+}
+
+//脚
+.prodyct_foot{
+  width: 100%;
+  background-color: rgb(230,230,230);
+  height: 100rem/@baseFontSize;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-decoration: none;
+  color: #999999;
+  .cart_icon{
+    display: block;
+    float: left;
+    //width: 100rem/@baseFontSize;
+    width: 14%;
+    line-height: 100rem/@baseFontSize;
+    text-align: center;
+    text-decoration: none;
+    color: #999999;
+  }
+  .addCart{
+    //width: 150rem;
+    //display: block;
+    float: left;
+    width: 38%;
+    height: 90rem/@baseFontSize;
+    background-color: rgb(153,16,32);
+    color: white;
+    line-height: 90rem/@baseFontSize;
+    text-align: center;
+    margin-top: 5rem/@baseFontSize;
+    margin-left: 2%;
+    border-radius: 5rem/@baseFontSize ;
+  }
+  .ljgm{
+    float: left;
+    width: 38%;
+    height: 90rem/@baseFontSize;
+    background-color: rgb(250,103,45);
+    color: white;
+    line-height: 90rem/@baseFontSize;
+    text-align: center;
+    margin-top: 5rem/@baseFontSize;
+    margin-left: 2%;
+    border-radius: 5rem/@baseFontSize ;
+
+
+  }
+}

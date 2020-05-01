@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <!--ios设置顶部通知栏的样式 黑色-->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <!--遇到数字不转化为电话号码的格式-->
+    <meta content="telephone=no" name="format-detection">
+    <!--项目描述-->
+    <meta name="description" content="乐淘是中国最大的正品运动鞋、皮鞋网上专卖。乐淘网经营的品牌包括耐克、阿迪达斯、李宁、匡威等国内外知名品牌的篮球鞋,板鞋,休闲鞋,跑步鞋,帆布...">
+    <meta name="Keywords" content="乐淘 乐淘鞋城 买鞋子 上乐淘 运动鞋 篮球鞋 帆布鞋 跑步鞋 男鞋 女鞋 足球鞋 休闲鞋 凉鞋 户外鞋 布洛克 高跟鞋 单鞋 豆豆鞋 乐福鞋 牛津鞋 凉拖 皮鞋 短靴 长靴 登山鞋 徒步鞋 硫化鞋 训练鞋 溯溪鞋 越野鞋 板鞋 足球鞋 网球鞋 赛车鞋 雪地靴 马丁靴 商务 英伦">
+    <link rel="stylesheet" href="res/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="res/mui/css/mui.css">
+    <link rel="stylesheet" type="text/less" href="./css/comment.less">
+    <link rel="stylesheet" type="text/less" href="./css/search.less">
+    <title>Title</title>
+</head>
+<body>
+<div class="lt_wrap">
+    <!--头部-->
+    <div class="le_header">
+
+        <a href="" class="left">
+            <span class="fa fa-arrow-left"></span>
+        </a>
+        <h3>搜索中心</h3>
+        <a href="" class="right">
+            <span class="fa fa-search"></span>
+        </a>
+    </div>
+
+
+    <!--<div class="lt_index_content">-->
+
+        <div class="content">
+            <div class="content_son">
+
+        <div class="lg_search_top">
+            <input id="searchK" type="text" placeholder="请输入搜索内容">
+            <!--<button id="searchBtn">搜索</button>-->
+            <a href="javascript:;" id="searchBtn">搜索</a>
+        </div>
+        <div class="lg_search_deleteAll_box">
+            <!--<span class="left">搜索记录</span>-->
+            <!--<span class="right"><span class="fa fa-trash"></span>删除记录</span>-->
+            <!-- 如果有记录 显示 否则 显示 "暂无搜索记录" -->
+        </div>
+
+        <ul class="lg_search_jilu_box">
+            <!--搜索记录模板-->
+        </ul>
+
+
+    </div>
+    </div>
+
+    <!-- 脚 -->
+
+    <div class="le_foot">
+        <nav class="mui-bar mui-bar-tab lg_tab">
+            <a class="mui-tab-item " href="index.html">
+                <span class="mui-icon mui-icon-home"></span>
+                <span class="mui-tab-label">首页</span>
+            </a>
+            <a class="mui-tab-item mui-active" href="category.html">
+                <span class="mui-icon mui-icon-bars"></span>
+                <span class="mui-tab-label">列表</span>
+            </a>
+            <a class="mui-tab-item" href="./user/cart.html">
+                <span class="mui-icon mui-icon-contact"></span>
+                <span class="mui-tab-label">购物车</span>
+            </a>
+            <a class="mui-tab-item" href="./user/index.html">
+                <span class="mui-icon mui-icon-gear"></span>
+                <span class="mui-tab-label">个人中心</span>
+            </a>
+        </nav>
+    </div>
+
+</div>
+
+<script type="text/html" id="searchMoban2">
+
+    {{ if mylist.length > 0 }}
+    <span class="left">搜索记录</span>
+    <span class="right"><span class="fa fa-trash"></span>删除记录</span>
+    {{ else }}
+    <span class="left">暂无搜索记录</span>
+    {{ /if }}
+</script>
+
+<!-- 模板 需要 type = "text/html"  和 id -->
+<script type="text/html" id="searchMoban">
+
+    {{ each mylist }}
+    <li> <span class="left">{{ $value }}</span><span class='fa fa-close' data-ind="{{ $index }}"></span></li>
+    {{ /each }}
+
+</script>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+    <script src="res/mui/js/mui.js"></script>
+    <script src="res/zepto/zepto.min.js"></script>
+    <script src="js/template-web.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/search.js"></script>
+
+</body>
+</html>
